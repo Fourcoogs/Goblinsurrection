@@ -1,0 +1,10 @@
+How to install: 
+1. open the command line and navigate to the Text Fonts folder in downloads
+
+2. copy and paste the following:
+
+cd Kingthings-Petrock
+sudo cp Kingthings_Petrock.ttf Kingthings_Petrock_light.ttf /usr/share/fonts
+cd -
+cd roboto-condensed
+sudo cp RobotoCondensed-Bold.ttf RobotoCondensed-BoldItalic.ttf RobotoCondensed-Italic.ttf RobotoCondensed-Light.ttf RobotoCondensed-LightItalic.ttf RobotoCondensed-Regular.ttf /usr/share/fonts
