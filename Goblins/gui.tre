@@ -1,0 +1,249 @@
+PAGE
+    Toplevel: Goblinsurrection - A Fantasy Terrorism Simulator
+        Frame: Character_creator_1  locked
+            Label: Label1_3_1_1_1  
+            Label: Label1_3_2_1  
+            Label: Label1_3_1_2  
+            Label: Label1_2_1_1_1_1  
+            Label: Label1_2_1_1_2_1  
+            Label: Label1_2_1_1_3_1  
+            Label: Label1_2_1_1_4_1  
+            Label: Label1_2_1_1_5  
+            Button: skillButt_5   command: downFight
+            Button: skillButt_1_2   command: downStealth
+            Button: skillButt_2_1   command: downLearning
+            Button: skillButt_1_1_1   command: downSpeech
+            Button: skillButt_3_1   command: downManagement
+            Button: skillButt_4_4_1   command: upManagement
+            Button: skillButt_4_3_1   command: upLearning
+            Button: skillButt_4_2_1   command: upSpeech
+            Button: skillButt_4_1_1   command: upStealth
+            Button: skillButt_4_5   command: upFight
+            Label: Label1_3_4  
+            Label: Label1_3_3_1  
+            Label: Label1_2_2  
+            Label: Label1_2_1_2  
+            TLabel: TLabel1_1  
+            Label: Label1_4  
+            Label: Label1_1  
+            Button: Button1_1   command: main_menu
+            Button: sex_button   command: sex_change
+            Entry: Entry1_1   bind: <<SetBalloon>> to {set ::vTcl::balloon::%W {Only nobles have family names}}
+            Entry: Entry1_2  
+            Button: Button1_1_1   command: start_loc
+            Button: rankButt_1   command: changeRank bind: <<SetBalloon>> to {set ::vTcl::balloon::%W {Only nobles have family names}}
+        Frame: Start_location  locked
+            Frame: location_details  locked
+                Message: cons  
+                Message: locDescMsg  
+                Label: place_name  
+                Message: pros  
+                Button: Button1_1_2_1  locked command: choose_location
+                Button: Button1_1_2_1_1   command: choose_team
+            Frame: choose_spot  locked
+                Label: Label1  
+                Button: Button1   command: byzend_details
+                Button: Button1_2   command: gorkhen_details
+                Button: Button1_3   command: ushnakh_details
+                Button: Button1_4   command: elden_details
+                Button: Button1_5   command: hevok_details
+                Button: Button1_6   command: darkhour_details
+                Button: Button1_7   command: media_details
+                Button: Button1_8   command: graygold_details
+                Button: Button1_9   command: centria_details
+                Button: Button1_10   command: faewind_details
+                Button: Button1_11   command: hobbiton_details
+                Button: Button1_12   command: highland_details
+                Button: Button1_13   command: merwendel_details
+                Button: Button1_14   command: dirennia_details
+                Button: Button1_1_2   command: new_game
+            Label: theMap  
+        Frame: Agent_skills  
+            Label: Label6_3_1  
+            Label: Label6_3_2  
+            Label: Label6_3_3  
+            Label: Label6_3_4  
+            Label: Label6_3  
+            Label: Label6_3_5  
+            Label: Label6_3_5_1  
+            Label: Label6_3_5_2  
+            Label: Label6_3_5_3  
+            Label: Label6_3_5_4  
+            Label: Label6  
+            Button: Button7   command: close_submenu
+        Frame: Team_chooser  locked
+            Label: Label3_1  
+            Label: Label3  
+            Button: Button1_1_2_2_1_1  locked command: reroll_agents
+            Frame: Agent_1  
+                Button: Button3  locked
+                Label: Label4_1_1_1_1  locked
+                Label: Label4_1_1_1  locked
+                Label: Label4_1_1  locked
+                Label: Label4_1  locked
+                Checkbutton: Checkbutton1  locked command: keep_agent1
+                Button: Button3_1  locked command: lambda: agent_skills(0)
+                Label: Label4  locked
+            Frame: Agent_3  
+                Button: Button3_2_1  locked
+                Label: Label4_1_1_1_2_1  locked
+                Label: Label4_2_1  locked
+                Label: Label4_1_2_1  locked
+                Label: Label4_1_1_2_1  locked
+                Label: Label4_1_1_1_1_1_1  locked
+                Checkbutton: Checkbutton1_1_1  locked command: keep_agent3
+                Button: Button3_1_1_1  locked command: lambda: agent_skills(2)
+            Frame: Agent_5  
+                Button: Button3_2_3  locked
+                Label: Label4_1_1_1_2_3  locked
+                Label: Label4_2_3  locked
+                Label: Label4_1_2_3  locked
+                Label: Label4_1_1_2_3  locked
+                Label: Label4_1_1_1_1_1_3  locked
+                Checkbutton: Checkbutton1_1_3  locked command: keep_agent5
+                Button: Button3_1_1_3  locked command: lambda: agent_skills(4)
+            Frame: Agent_6  
+                Button: Button3_2_4  locked
+                Label: Label4_1_1_1_2_4  locked
+                Label: Label4_1_2_4  locked
+                Label: Label4_1_1_2_4  locked
+                Label: Label4_1_1_1_1_1_4  locked
+                Label: Label4_2_4  locked
+                Checkbutton: Checkbutton1_1_4  locked command: keep_agent6
+                Button: Button3_1_1_4  locked command: lambda: agent_skills(5)
+            Frame: Agent_9  
+                Button: Button3_2_7  locked
+                Label: Label4_1_1_1_2_7  locked
+                Label: Label4_2_7  locked
+                Label: Label4_1_2_7  locked
+                Label: Label4_1_1_2_7  locked
+                Label: Label4_1_1_1_1_1_7  locked
+                Checkbutton: Checkbutton1_1_7  locked command: keep_agent9
+                Button: Button3_1_1_7  locked command: lambda: agent_skills(8)
+            Frame: Agent_2  
+                Button: Button3_2  locked
+                Label: Label4_1_2  locked
+                Label: Label4_1_1_2  locked
+                Label: Label4_1_1_1_2  locked
+                Label: Label4_1_1_1_1_1  locked
+                Label: Label4_2  locked
+                Checkbutton: Checkbutton1_1  locked command: keep_agent2
+                Button: Button3_1_1  locked command: lambda: agent_skills(1)
+            Frame: Agent_10  
+                Button: Button3_2_8  locked
+                Label: Label4_1_1_1_2_8  locked
+                Label: Label4_2_8  locked
+                Label: Label4_1_2_8  locked
+                Label: Label4_1_1_2_8  locked
+                Label: Label4_1_1_1_1_1_8  locked
+                Checkbutton: Checkbutton1_1_8  locked command: keep_agent10
+                Button: Button3_1_1_8  locked command: lambda: agent_skills(9)
+            Frame: Agent_7  
+                Button: Button3_2_5  locked
+                Label: Label4_1_1_1_2_5  locked
+                Label: Label4_2_5  locked
+                Label: Label4_1_1_2_5  locked
+                Label: Label4_1_2_5  locked
+                Label: Label4_1_1_1_1_1_5  locked
+                Checkbutton: Checkbutton1_1_5  locked command: keep_agent7
+                Button: Button3_1_1_5  locked command: lambda: agent_skills(6)
+            Frame: Agent_8  
+                Button: Button3_2_6  locked
+                Label: Label4_1_1_1_2_6  locked
+                Label: Label4_2_6  locked
+                Label: Label4_1_2_6  locked
+                Label: Label4_1_1_2_6  locked
+                Label: Label4_1_1_1_1_1_6  locked
+                Checkbutton: Checkbutton1_1_6  locked command: keep_agent8
+                Button: Button3_1_1_6  locked command: lambda: agent_skills(7)
+            Frame: Agent_4  
+                Button: Button3_2_2  locked
+                Label: Label4_1_1_1_2_2  locked
+                Label: Label4_2_2  locked
+                Label: Label4_1_2_2  locked
+                Label: Label4_1_1_2_2  locked
+                Label: Label4_1_1_1_1_1_2  locked
+                Checkbutton: Checkbutton1_1_2  locked command: keep_agent4
+                Button: Button3_1_1_2  locked command: lambda: agent_skills(3)
+            Label: Label3_3  
+            Button: Button1_1_2_2  locked command: back_to_location_picker
+            Label: Label3_2  
+            Button: Button1_1_2_2_1  locked command: start_game
+        Frame: Event_screen  
+            Message: event_message  
+            Button: event_button2   command: lambda: eventCommand(2)
+            Button: event_button3   command: lambda: eventCommand(3)
+            Button: event_button1   command: lambda: eventCommand(1)
+        Frame: Combat  locked
+            Label: Label7  
+            Label: active_team  
+            TCombobox: enemyList  
+            Label: activeAgentName  
+            Label: labelAlpha  
+            Label: Label10  
+            Label: Label11  
+            Label: Label12  
+            Label: agent_health  
+            Label: agent_agility  
+            Label: agent_armor  
+            Label: agent_ap  
+            Label: Label9_1  
+            Label: Label10_1  
+            Label: Label11_1  
+            Label: Label12_1  
+            Label: enemy_health  
+            Label: enemy_agility  
+            Label: enemy_armor  
+            Label: enemy_ap  
+            Message: dialogueWindow  
+            Button: Button9   command: attack
+        Frame: Main_game  locked
+            Frame: map_view  locked
+                Label: theMap_1_1  locked
+                Button: Button4  locked
+                Button: Button4_1  locked
+                TCombobox: region_selection  locked bind: <<SetBalloon>> to {set ::vTcl::balloon::%W {View different region}}
+            Button: Button5_1_2   command: load_options
+            Frame: Frame1  locked
+                Label: Label6_1_2  
+                Label: Label6_1_1_2  
+                Label: Label5_1  
+                Label: Label5_2  
+                Button: Button6  
+                Button: Button6_2  
+                Label: Label6_2  
+                Label: Label6_1_1_1  
+                Label: Label6_1_1  
+                Label: Label6_1  
+                Button: Button6_1  
+                Button: Button6_1_1  
+                Label: localPopulation  
+                Label: Label5  
+                TSeparator: TSeparator1  
+                Button: Button5   command: end_turn
+                Label: Label6_1_3  
+                Label: global_stability  
+                Label: turn_number  
+                Label: Label6_1_3_1  
+                Label: global_heat  
+                Label: global_funds  
+                Label: local_sympathy  
+                Label: local_pops  
+                Label: local_guard_level  
+                Label: local_stability  
+                Label: local_heat  
+            Button: Button5_1   command: save_game bind: <<SetBalloon>> to {set ::vTcl::balloon::%W {sorry, this feature has been cancelled :(}}
+            Button: Button5_1_1   command: exit
+            Frame: Quest_menu  
+                Label: Label8  
+                Label: Label8_1  
+                TCombobox: target  
+                TCombobox: mission_type  
+                Button: Button8   command: queue_mission
+        Frame: Start_menu  locked
+            Button: Button2_1   command: load_save
+            Button: Button2_2   command: options
+            Button: Button2_3   command: exit
+            Label: Label2  
+            Button: Button2   command: new_game
+
